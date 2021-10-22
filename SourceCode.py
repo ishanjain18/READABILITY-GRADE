@@ -1,5 +1,5 @@
 def main():
-    text = input0()
+    text = input("Text: ")
     letters = letter_count(text)
     words = word_count(text)
     sentences = sentence_count(text)
@@ -15,25 +15,18 @@ def main():
         print(f"Grade {index1}")
 
 
-def input0():
-    input1 = input("Text: ")
-    return input1
-
 
 def letter_count(text):
     letters = 0
+    text = text.lower
     for i in range(0, len(text)):
-        if ((text[i].lower() <= 'z') and (text[i].lower() >= 'a')):
+        if ((text[i] <= 'z') and (text[i] >= 'a')):
             letters += 1
     return letters
 
 
 def word_count(text):
-    words = 1
-    for i in range(0, len(text)):
-        if text[i] == " ":
-            words += 1
-    return words
+    return len(s.split())
 
 
 def sentence_count(text):
