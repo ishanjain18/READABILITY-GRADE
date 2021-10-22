@@ -18,7 +18,7 @@ def main():
 
 def letter_count(text):
     letters = 0
-    text = text.lower
+    text = text.lower()
     for i in range(0, len(text)):
         if ((text[i] <= 'z') and (text[i] >= 'a')):
             letters += 1
@@ -26,7 +26,7 @@ def letter_count(text):
 
 
 def word_count(text):
-    return len(s.split())
+    return len(text.split())
 
 
 def sentence_count(text):
